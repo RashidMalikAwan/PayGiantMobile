@@ -560,6 +560,7 @@ const SelectBeneficiary = ({ navigation, route }: any) => {
                 }}
                 style={[Gutters.smallTMargin]}
                 loading={beneLoad}
+                disabled={beneLoad}
               />
               <View style={{ height: responsiveHeight(20) }} />
             </ScrollView>

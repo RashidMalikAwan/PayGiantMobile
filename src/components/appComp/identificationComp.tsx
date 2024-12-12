@@ -382,6 +382,7 @@ const IdentificationComp = ({ data, setData, onPress, loading }: any) => {
           <Button
             loading={loading}
             title="Add now"
+            disabled={loading}
             onPress={onPress}
             style={[
               Gutters.smallTMargin,

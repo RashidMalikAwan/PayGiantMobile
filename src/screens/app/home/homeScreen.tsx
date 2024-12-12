@@ -401,7 +401,7 @@ const HomeScreen = ({ navigation, route }: any) => {
                   },
                 ]}
               >
-                {processingFee}
+                {processingFee*100}%
               </Text>
             </View>
             <View
