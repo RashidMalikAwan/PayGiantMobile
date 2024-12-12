@@ -1,0 +1,7 @@
+
+/android/.gradle
+/android/app/.cxx
+/android/app/build
+/ios/build
+/ios/Pods
+/node_modules
