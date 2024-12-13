@@ -109,7 +109,7 @@ const isValidPassword = (password: any) => {
   const passwordRegex = /^(?=.*[0-9!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
   return passwordRegex.test(password);
 };
-const pickImage = async() => {
+const pickImage = async () => {
   try {
     let image = await ImagePicker.openPicker({
       width: 1000,
@@ -138,7 +138,7 @@ const pickImage = async() => {
   }
 };
 
-const takePhoto = async() => {
+const takePhoto = async () => {
   try {
     let image = await ImagePicker.openCamera({
       width: 1000,
@@ -162,6 +162,30 @@ const takePhoto = async() => {
     console.log("error while camera image", error);
   }
 };
+
+const checkEmpty = (obj: any) => {
+  if (obj === null || obj === undefined) {
+    return true;
+  }
+
+  if (typeof obj === "object") {
+    if (Array.isArray(obj)) {
+      return obj.length === 0;
+    }
+
+    return Object.keys(obj).every((key) => checkEmpty(obj[key]));
+  }
+
+  return (
+    obj === "" ||
+    obj === 0 ||
+    obj === false ||
+    obj === null ||
+    obj === undefined
+  );
+};
+
+
 export {
   // getCurrentLocation,
   // locationPermission,
@@ -172,5 +196,6 @@ export {
   isValidEmail,
   isValidPassword,
   pickImage,
-  takePhoto
+  takePhoto,
+  checkEmpty,
 };

@@ -1,25 +1,25 @@
 {
-  "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp",
-  "reactNativePath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native",
+  "root": "/Users/mac/Documents/GitHub/PayGiantMobile",
+  "reactNativePath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native",
   "reactNativeVersion": "0.76",
   "dependencies": {
     "@notifee/react-native": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@notifee/react-native",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@notifee/react-native",
       "name": "@notifee/react-native",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@notifee/react-native/RNNotifee.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@notifee/react-native/RNNotifee.podspec",
           "version": "9.1.3",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@notifee/react-native/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@notifee/react-native/android",
           "packageImportPath": "import io.invertase.notifee.NotifeePackage;",
           "packageInstance": "new NotifeePackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@notifee/react-native/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@notifee/react-native/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -28,23 +28,23 @@
       }
     },
     "@react-native-community/datetimepicker": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@react-native-community/datetimepicker",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@react-native-community/datetimepicker",
       "name": "@react-native-community/datetimepicker",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@react-native-community/datetimepicker/RNDateTimePicker.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@react-native-community/datetimepicker/RNDateTimePicker.podspec",
           "version": "8.2.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@react-native-community/datetimepicker/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@react-native-community/datetimepicker/android",
           "packageImportPath": "import com.reactcommunity.rndatetimepicker.RNDateTimePickerPackage;",
           "packageInstance": "new RNDateTimePickerPackage()",
           "buildTypes": [],
           "libraryName": "RNDateTimePickerCGen",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@react-native-community/datetimepicker/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@react-native-community/datetimepicker/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -53,22 +53,22 @@
       }
     },
     "@react-native-community/netinfo": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@react-native-community/netinfo",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@react-native-community/netinfo",
       "name": "@react-native-community/netinfo",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@react-native-community/netinfo/react-native-netinfo.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@react-native-community/netinfo/react-native-netinfo.podspec",
           "version": "11.4.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@react-native-community/netinfo/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@react-native-community/netinfo/android",
           "packageImportPath": "import com.reactnativecommunity.netinfo.NetInfoPackage;",
           "packageInstance": "new NetInfoPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@react-native-community/netinfo/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@react-native-community/netinfo/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -77,17 +77,17 @@
       }
     },
     "@react-native-picker/picker": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@react-native-picker/picker",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@react-native-picker/picker",
       "name": "@react-native-picker/picker",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@react-native-picker/picker/RNCPicker.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@react-native-picker/picker/RNCPicker.podspec",
           "version": "2.10.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@react-native-picker/picker/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@react-native-picker/picker/android",
           "packageImportPath": "import com.reactnativecommunity.picker.RNCPickerPackage;",
           "packageInstance": "new RNCPickerPackage()",
           "buildTypes": [],
@@ -96,7 +96,7 @@
             "RNCAndroidDialogPickerComponentDescriptor",
             "RNCAndroidDropdownPickerComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/@react-native-picker/picker/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/@react-native-picker/picker/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -105,17 +105,17 @@
       }
     },
     "lottie-react-native": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/lottie-react-native",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/lottie-react-native",
       "name": "lottie-react-native",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/lottie-react-native/lottie-react-native.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/lottie-react-native/lottie-react-native.podspec",
           "version": "7.1.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/lottie-react-native/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/lottie-react-native/android",
           "packageImportPath": "import com.airbnb.android.react.lottie.LottiePackage;",
           "packageInstance": "new LottiePackage()",
           "buildTypes": [],
@@ -123,7 +123,7 @@
           "componentDescriptors": [
             "LottieAnimationViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/lottie-react-native/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/lottie-react-native/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -132,22 +132,22 @@
       }
     },
     "react-native-device-info": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-device-info",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-device-info",
       "name": "react-native-device-info",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-device-info/RNDeviceInfo.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-device-info/RNDeviceInfo.podspec",
           "version": "14.0.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-device-info/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-device-info/android",
           "packageImportPath": "import com.learnium.RNDeviceInfo.RNDeviceInfo;",
           "packageInstance": "new RNDeviceInfo()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-device-info/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-device-info/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -156,22 +156,22 @@
       }
     },
     "react-native-fs": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-fs",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-fs",
       "name": "react-native-fs",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-fs/RNFS.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-fs/RNFS.podspec",
           "version": "2.20.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-fs/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-fs/android",
           "packageImportPath": "import com.rnfs.RNFSPackage;",
           "packageInstance": "new RNFSPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-fs/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-fs/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -180,17 +180,17 @@
       }
     },
     "react-native-gesture-handler": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-gesture-handler",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-gesture-handler",
       "name": "react-native-gesture-handler",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-gesture-handler/RNGestureHandler.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-gesture-handler/RNGestureHandler.podspec",
           "version": "2.21.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-gesture-handler/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-gesture-handler/android",
           "packageImportPath": "import com.swmansion.gesturehandler.RNGestureHandlerPackage;",
           "packageInstance": "new RNGestureHandlerPackage()",
           "buildTypes": [],
@@ -199,7 +199,7 @@
             "RNGestureHandlerButtonComponentDescriptor",
             "RNGestureHandlerRootViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -208,22 +208,22 @@
       }
     },
     "react-native-image-crop-picker": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-image-crop-picker",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-image-crop-picker",
       "name": "react-native-image-crop-picker",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-image-crop-picker/RNImageCropPicker.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-image-crop-picker/RNImageCropPicker.podspec",
           "version": "0.41.6",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-image-crop-picker/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-image-crop-picker/android",
           "packageImportPath": "import com.reactnative.ivpusic.imagepicker.PickerPackage;",
           "packageInstance": "new PickerPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-image-crop-picker/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-image-crop-picker/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -232,22 +232,22 @@
       }
     },
     "react-native-linear-gradient": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-linear-gradient",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-linear-gradient",
       "name": "react-native-linear-gradient",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-linear-gradient/BVLinearGradient.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-linear-gradient/BVLinearGradient.podspec",
           "version": "2.8.3",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-linear-gradient/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-linear-gradient/android",
           "packageImportPath": "import com.BV.LinearGradient.LinearGradientPackage;",
           "packageInstance": "new LinearGradientPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-linear-gradient/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-linear-gradient/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -256,42 +256,42 @@
       }
     },
     "react-native-mmkv": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-mmkv",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-mmkv",
       "name": "react-native-mmkv",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-mmkv/react-native-mmkv.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-mmkv/react-native-mmkv.podspec",
           "version": "3.1.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-mmkv/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-mmkv/android",
           "packageImportPath": "import com.mrousavy.mmkv.MmkvPackage;",
           "packageInstance": "new MmkvPackage()",
           "buildTypes": [],
           "libraryName": "RNMmkvSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": "react-native-mmkv",
-          "cxxModuleCMakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-mmkv/android/CMakeLists.txt",
+          "cxxModuleCMakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-mmkv/android/CMakeLists.txt",
           "cxxModuleHeaderName": "NativeMmkvModule",
           "isPureCxxDependency": false
         }
       }
     },
     "react-native-navigation-bar-color": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-navigation-bar-color",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-navigation-bar-color",
       "name": "react-native-navigation-bar-color",
       "platforms": {
         "ios": null,
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-navigation-bar-color/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-navigation-bar-color/android",
           "packageImportPath": "import com.thebylito.navigationbarcolor.NavigationBarColorPackage;",
           "packageInstance": "new NavigationBarColorPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-navigation-bar-color/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-navigation-bar-color/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -300,23 +300,23 @@
       }
     },
     "react-native-reanimated": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-reanimated",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-reanimated",
       "name": "react-native-reanimated",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-reanimated/RNReanimated.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-reanimated/RNReanimated.podspec",
           "version": "3.16.3",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-reanimated/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-reanimated/android",
           "packageImportPath": "import com.swmansion.reanimated.ReanimatedPackage;",
           "packageInstance": "new ReanimatedPackage()",
           "buildTypes": [],
           "libraryName": "rnreanimated",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -325,17 +325,17 @@
       }
     },
     "react-native-safe-area-context": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-safe-area-context",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-safe-area-context",
       "name": "react-native-safe-area-context",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec",
           "version": "4.14.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-safe-area-context/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-safe-area-context/android",
           "packageImportPath": "import com.th3rdwave.safeareacontext.SafeAreaContextPackage;",
           "packageInstance": "new SafeAreaContextPackage()",
           "buildTypes": [],
@@ -344,7 +344,7 @@
             "RNCSafeAreaProviderComponentDescriptor",
             "RNCSafeAreaViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -353,17 +353,17 @@
       }
     },
     "react-native-screens": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-screens",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-screens",
       "name": "react-native-screens",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-screens/RNScreens.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-screens/RNScreens.podspec",
           "version": "4.3.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-screens/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-screens/android",
           "packageImportPath": "import com.swmansion.rnscreens.RNScreensPackage;",
           "packageInstance": "new RNScreensPackage()",
           "buildTypes": [],
@@ -381,7 +381,7 @@
             "RNSScreenContentWrapperComponentDescriptor",
             "RNSModalScreenComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -389,18 +389,31 @@
         }
       }
     },
+    "react-native-simple-toast": {
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-simple-toast",
+      "name": "react-native-simple-toast",
+      "platforms": {
+        "ios": {
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-simple-toast/react-native-simple-toast.podspec",
+          "version": "3.3.1",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": null
+      }
+    },
     "react-native-svg": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-svg",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-svg",
       "name": "react-native-svg",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-svg/RNSVG.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-svg/RNSVG.podspec",
           "version": "15.9.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-svg/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-svg/android",
           "packageImportPath": "import com.horcrux.svg.SvgPackage;",
           "packageInstance": "new SvgPackage()",
           "buildTypes": [],
@@ -436,7 +449,7 @@
             "RNSVGTSpanComponentDescriptor",
             "RNSVGUseComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -445,23 +458,23 @@
       }
     },
     "react-native-vector-icons": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-vector-icons",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-vector-icons",
       "name": "react-native-vector-icons",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-vector-icons/RNVectorIcons.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-vector-icons/RNVectorIcons.podspec",
           "version": "10.2.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-vector-icons/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-vector-icons/android",
           "packageImportPath": "import com.oblador.vectoricons.VectorIconsPackage;",
           "packageInstance": "new VectorIconsPackage()",
           "buildTypes": [],
           "libraryName": "RNVectorIconsSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -470,17 +483,17 @@
       }
     },
     "react-native-webview": {
-      "root": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-webview",
+      "root": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-webview",
       "name": "react-native-webview",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-webview/react-native-webview.podspec",
+          "podspecPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-webview/react-native-webview.podspec",
           "version": "13.12.4",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-webview/android",
+          "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-webview/android",
           "packageImportPath": "import com.reactnativecommunity.webview.RNCWebViewPackage;",
           "packageInstance": "new RNCWebViewPackage()",
           "buildTypes": [],
@@ -488,7 +501,7 @@
           "componentDescriptors": [
             "RNCWebViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/node_modules/react-native-webview/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/mac/Documents/GitHub/PayGiantMobile/node_modules/react-native-webview/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -654,7 +667,7 @@
         {
           "name": "--path <path>",
           "description": "Path to the React Native project root.",
-          "default": "/Users/mac/Documents/GitHub/PayGiant-mobileapp"
+          "default": "/Users/mac/Documents/GitHub/PayGiantMobile"
         },
         {
           "name": "--platform <string>",
@@ -941,7 +954,7 @@
   "assets": [],
   "project": {
     "ios": {
-      "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/ios",
+      "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/ios",
       "xcodeProject": {
         "name": "PayGiant.xcworkspace",
         "path": ".",
@@ -950,7 +963,7 @@
       "assets": []
     },
     "android": {
-      "sourceDir": "/Users/mac/Documents/GitHub/PayGiant-mobileapp/android",
+      "sourceDir": "/Users/mac/Documents/GitHub/PayGiantMobile/android",
       "appName": "app",
       "packageName": "com.paygiant",
       "applicationId": "com.paygiant",

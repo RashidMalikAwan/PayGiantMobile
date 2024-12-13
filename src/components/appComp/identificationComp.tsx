@@ -111,7 +111,6 @@ const IdentificationComp = ({ data, setData, onPress, loading }: any) => {
       });
     }
   };
-  console.log(image);
 
   return (
     <KeyboardAvoidingView style={[Layout.fullWidth]}>
@@ -170,6 +169,7 @@ const IdentificationComp = ({ data, setData, onPress, loading }: any) => {
             <TextInput
               placeholder="Enter ID number"
               value={data.id_no}
+              keyboardType="numeric"
               onChangeText={(value: any) => {
                 setData({ ...data, id_no: value });
               }}

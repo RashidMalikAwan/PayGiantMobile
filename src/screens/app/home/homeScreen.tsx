@@ -39,7 +39,12 @@ import SwitchCountries from "../../../components/appComp/switchCountries";
 import { useDispatch, useSelector } from "react-redux";
 import { AuthState, setUser } from "../../../store/auth";
 import IdentificationComp from "../../../components/appComp/identificationComp";
-import { showError, showSuccess } from "../../../utils/HelperFuctions";
+import {
+  checkEmpty,
+  showError,
+  showSuccess,
+} from "../../../utils/HelperFuctions";
+import FlashMessage, { showMessage } from "react-native-flash-message";
 
 const HomeScreen = ({ navigation, route }: any) => {
   const {
@@ -85,7 +90,6 @@ const HomeScreen = ({ navigation, route }: any) => {
     PKR_GHS: 0.044,
     GHS_USD: 0.085,
     USD_PKR: 280.0,
-
   };
   const [selectedobj, setSelectedobj] = useState<any>({
     paymentMethod: "",
@@ -129,8 +133,8 @@ const HomeScreen = ({ navigation, route }: any) => {
     }
     console.log("Selected object:", selectedobj);
     const sendingAmount = parseFloat(selectedobj.sendingMoney) || 0;
-    const calculatedProcessingFee = sendingAmount * 0.01; 
-  
+    const calculatedProcessingFee = sendingAmount * 0.01;
+
     setTotalPay(sendingAmount + calculatedProcessingFee);
   }, [SendingCountries, selectedobj.sendingMoney]);
   useEffect(() => {
@@ -201,39 +205,59 @@ const HomeScreen = ({ navigation, route }: any) => {
       //   ...selectedobj,
       //   receiveingMoney: amount,
       // });
-      return amount; // No conversion if same currency
+      return amount;
     } else {
-      return 0; // Unsupported currency pair
+      return 0;
     }
-    return parseFloat((amount * rate).toFixed(2)); // Convert and round
+    return parseFloat((amount * rate).toFixed(2));
   };
 
   const AddUserIdentification = async () => {
-    try {
-      let body = {
-        userId: user.id,
-        identificationId: identi.type,
-        identificationNumber: identi.id_no,
-        expiryDate: identi.expired_date,
-        issuedDate: identi.issue_date,
-        countryId: 1,
-        stateId: 1,
-        cityId: 1,
-        imgUrl: "",
-      };
-      await addIdentification(body)
-        .unwrap()
-        .then((res: any) => {
-          console.log(res);
-          if (res.code == 200) {
-            dispatch(setUser({ ...user, hasIdentification: true }));
-            showSuccess(res.message);
-          } else {
-            showError(res.message);
-          }
-        });
-    } catch (error) {
-      console.log(error);
+    if (checkEmpty(identi)) {
+      showError("All fields are required");
+    } else if (!/^\d+$/.test(identi.type)) {
+      showError("Type is required.");
+    } else if (!/^\d+$/.test(identi.id_no)) {
+      showError("ID number must be numeric.");
+    } else if (identi.issue_date.length === 0) {
+      showError("Issue date is required.");
+    } else if (identi.expired_date.length === 0) {
+      showError("Expired date is required.");
+    } else {
+      try {
+        let body = {
+          userId: user.id,
+          identificationId: identi.type,
+          identificationNumber: identi.id_no,
+          expiryDate: identi.expired_date,
+          issuedDate: identi.issue_date,
+          countryId: 1,
+          stateId: 1,
+          cityId: 1,
+          imgUrl: "",
+        };
+
+        await addIdentification(body)
+          .unwrap()
+          .then((res: any) => {
+            console.log("Response:", res); // Log the whole response
+            if (res.code === 200) {
+              dispatch(setUser({ ...user, hasIdentification: true }));
+              setTimeout(() => {
+                identificationRBSheet?.current?.close();
+              }, 1000);
+              showSuccess(res.message);
+            } else {
+              showError(res.data.message);
+            }
+          })
+          .catch((err) => {
+            console.log("Error details:", err); // Log full error
+            showError(err.data?.message || "Unknown error occurred");
+          });
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
 
@@ -324,7 +348,6 @@ const HomeScreen = ({ navigation, route }: any) => {
                       borderRadius: responsiveWidth(5),
                       justifyContent: "center",
                       alignItems: "center",
-                      
                     },
                   ]}
                 >
@@ -339,7 +362,7 @@ const HomeScreen = ({ navigation, route }: any) => {
                 <Text
                   style={[
                     Fonts.textSmall,
-                    { color: Colors.white, marginLeft: responsiveWidth(2),  },
+                    { color: Colors.white, marginLeft: responsiveWidth(2) },
                   ]}
                 >
                   {`1 ${
@@ -401,7 +424,7 @@ const HomeScreen = ({ navigation, route }: any) => {
                   },
                 ]}
               >
-                {processingFee*100}%
+                {processingFee * parseFloat(selectedobj.sendingMoney)||0}
               </Text>
             </View>
             <View
@@ -534,11 +557,11 @@ const HomeScreen = ({ navigation, route }: any) => {
                     navigation.navigate("SelectBeneficiary", {
                       selectedobj: selectedobj,
                       totalPay: totalPay,
-                      receivingMoney:convertCurrency(
+                      receivingMoney: convertCurrency(
                         parseFloat(selectedobj?.sendingMoney || 0),
                         selectedobj?.SendingCountry?.isoCode2,
                         selectedobj?.receiveingCountry?.isoCode2
-                      )
+                      ),
                     });
                   } else {
                     showError("Please enter amount");

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import {
   ActivityIndicator,
   Image,
@@ -34,6 +34,7 @@ import { AuthState } from "../../../store/auth";
 import { Colors } from "../../../theme/Variables";
 import { showError, showSuccess } from "../../../utils/HelperFuctions";
 import Loader from "../../../components/appComp/loading";
+import { useFocusEffect } from "@react-navigation/native";
 
 const SelectBeneficiary = ({ navigation, route }: any) => {
   const {
@@ -58,7 +59,6 @@ const SelectBeneficiary = ({ navigation, route }: any) => {
     phoneCode: "",
     phoneNumber: "",
   });
-  console.log("params.......", selectedobj, totalPay, receivingMoney);
   const [data, setData] = useState([]);
   const [purpose, setPurpose] = useState("");
   const [selectedValue, setSelectedValue] = useState(null);
@@ -79,15 +79,19 @@ const SelectBeneficiary = ({ navigation, route }: any) => {
     useInitiateTransactionMutation();
   const [PayInitiateTransaction, { isLoading: payLoad }] =
     usePayInitiateTransactionMutation();
-  useEffect(() => {
-    getAllBeneficiaries();
-  }, []);
+  useFocusEffect(
+    useCallback(() => {
+      getCountries()
+      getAllBeneficiaries();
+    }, [])
+  );
   const getAllBeneficiaries = async () => {
     try {
       await getBeneficiaries({ user: user.id })
         .unwrap()
-        .then((res: any) => {
+        .then(async (res: any) => {
           console.log("Beneficiary.......", res);
+
           if (res.code == 200) {
             const pickerData = res.data.map((item: any) => ({
               label: `${item.firstName} ${item.lastName} (+${item.phoneNumber})`,
@@ -97,7 +101,6 @@ const SelectBeneficiary = ({ navigation, route }: any) => {
           } else {
             showError(res.message);
           }
-          getCountries();
         })
         .catch((error) => {
           console.log(error);
@@ -133,7 +136,9 @@ const SelectBeneficiary = ({ navigation, route }: any) => {
           }));
           setPurposes(pickerData);
         })
-        .catch((err) => console.log(err));
+        .catch((err) => {
+          showError(err.data.message)
+          console.log(err)});
     } catch (error) {
       console.log(error);
     }
@@ -197,10 +202,11 @@ const SelectBeneficiary = ({ navigation, route }: any) => {
   };
 
   const addBeneficiaryApi = async () => {
+    console.log(countries);
     const same: any = countries.find(
       (item: any) => item.dialingCode == callingCode
     );
-
+    console.log({ same }, { callingCode });
     //
     try {
       let data = {
@@ -234,7 +240,7 @@ const SelectBeneficiary = ({ navigation, route }: any) => {
           }
         })
         .catch((err: any) => {
-          console.log('Api  error',err);
+          console.log("Api  error", err);
           showError(err.data.message);
         });
     } catch (error) {
@@ -294,7 +300,9 @@ const SelectBeneficiary = ({ navigation, route }: any) => {
           navigation.navigate("TransactionComplete", {
             data: res.data,
           });
-        });
+        }).catch(err=>{
+          showError(err.data.message)
+        })
     } catch (error) {
       console.log(error);
     }
@@ -567,7 +575,9 @@ const SelectBeneficiary = ({ navigation, route }: any) => {
           </View>
         }
       />
-      <Loader visible={isLoading || transLoad || payLoad || beneLoad||intransload} />
+      <Loader
+        visible={isLoading || transLoad || payLoad || beneLoad || intransload}
+      />
       {/* <RbsheetComp
         height={550}
         ref={deleteRb}

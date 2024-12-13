@@ -19,6 +19,7 @@ export type ApplicationStackParamList = {
   SelectBeneficiary?: NavigatorScreenParams<MainParamsList>;
   TransactionComplete?: NavigatorScreenParams<MainParamsList>;
   ViewReceipt?: NavigatorScreenParams<MainParamsList>;
+  Dashboard?: NavigatorScreenParams<MainParamsList>;
 };
 
 export type ApplicationScreenProps =

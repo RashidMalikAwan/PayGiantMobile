@@ -5,6 +5,7 @@ import More from "./more/more";
 import SelectBeneficiary from "./home/selectBeneficiary";
 import TransactionComplete from "./home/transactionComplete";
 import ViewReceipt from "./home/viewReceipt";
+import Dashboard from "./home/dashboard";
 export {
   HomeScreen,
   History,
@@ -13,4 +14,5 @@ export {
   SelectBeneficiary,
   TransactionComplete,
   ViewReceipt,
+  Dashboard
 };
