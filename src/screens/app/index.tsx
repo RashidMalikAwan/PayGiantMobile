@@ -6,6 +6,7 @@ import SelectBeneficiary from "./home/selectBeneficiary";
 import TransactionComplete from "./home/transactionComplete";
 import ViewReceipt from "./home/viewReceipt";
 import Dashboard from "./home/dashboard";
+import ViewAllcate from "./home/viewAllcate";
 export {
   HomeScreen,
   History,
@@ -14,5 +15,6 @@ export {
   SelectBeneficiary,
   TransactionComplete,
   ViewReceipt,
-  Dashboard
+  Dashboard,
+  ViewAllcate
 };

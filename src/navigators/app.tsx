@@ -15,6 +15,7 @@ import {
   TransactionComplete,
   ViewReceipt,
   Dashboard,
+  ViewAllcate,
 } from "../screens/app";
 import {
   createBottomTabNavigator,
@@ -54,7 +55,7 @@ const HomeStackScreens = () => {
   return (
     <HomeStack.Navigator
       screenOptions={{ headerShown: false }}
-      initialRouteName={"Home"}
+      initialRouteName={"Dashboard"}
       >
         <HomeStack.Screen name={"Dashboard"} component={Dashboard} />
         <HomeStack.Screen name={"Home"} component={HomeScreen} />
@@ -316,6 +317,7 @@ const App = () => {
       <Stack.Screen name={"SelectBeneficiary"} component={SelectBeneficiary} />
       <Stack.Screen name={"TransactionComplete"} component={TransactionComplete} />
       <Stack.Screen name={"ViewReceipt"} component={ViewReceipt} />
+      <Stack.Screen name={"ViewAllcate"} component={ViewAllcate} />
     </Stack.Navigator>
   );
 };
